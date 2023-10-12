@@ -16,3 +16,20 @@ const slides = [
 		"tagLine":"Autocollants <span>avec découpe laser sur mesure</span>"
 	}
 ]
+
+//* Déclaration des variables /arrowLeft et /arrowRight *//
+//* Cela permet au code d'intéragir avec les éléments HTML, qui possédent les classes arrow_left et arrow_right *//
+
+const arrowLeft = document.querySelector(".arrow_left");
+const arrowRight = document.querySelector(".arrow_right");
+
+
+//** Étape 2 : Ajouter des Event Listeners sur les flèches **//
+
+arrowLeft.addEventListener("click", function() {
+    console.log("Clique sur la flèche gauche !");
+});
+
+arrowRight.addEventListener("click", function() {
+    console.log("Clique sur la flèche droite !");
+});
